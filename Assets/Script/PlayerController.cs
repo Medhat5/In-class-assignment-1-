@@ -3,8 +3,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float speed = 5f;
+    private float speed = 100f;
     [SerializeField]
     private float lookSensitivity = 3f;
 
@@ -19,11 +18,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButton("Fire3"))
         {
-            speed = 15f;
+            speed = 30f;
         }
         else
         {
-            speed = 5f;
+            speed = 20f;
         }
 
         //calculate movement velocity as 3D vec
