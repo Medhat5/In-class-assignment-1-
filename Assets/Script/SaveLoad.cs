@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Runtime.InteropServices;
 public class SaveLoad : MonoBehaviour
 {
-    const string DLL_NAME = "Plugin 1";
+    const string DLL_NAME = "SimplePlugin";
     [DllImport(DLL_NAME)]
     private static extern int save(float xPosition, float yPosition, float zPosition);
     [DllImport(DLL_NAME)]
@@ -30,3 +30,5 @@ public class SaveLoad : MonoBehaviour
         }
     }
 }
+
+
