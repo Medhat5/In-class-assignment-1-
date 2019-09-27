@@ -14,7 +14,7 @@ public class SaveLoad : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             float x = transform.localPosition.x;
             float y = transform.localPosition.y;
@@ -23,7 +23,7 @@ public class SaveLoad : MonoBehaviour
             save(x, y, z);
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             location = load();
             transform.localPosition = location;
